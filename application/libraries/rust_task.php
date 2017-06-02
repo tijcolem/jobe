@@ -21,7 +21,7 @@ class Rust_Task extends Task {
     }
 
     public static function getVersionCommand() {
-        return array('rustc --version', '/rustc \(.*\) ([0-9.]*)/');
+        return array('rustc --version', '/rustc ([0-9]+.[0-9]+\.[0-9])(.*)/');
     }
 
     public function compile() {
