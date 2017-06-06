@@ -41,7 +41,7 @@ class Rust_Task extends Task {
         }
     }
 
-    // A default name for C++ programs
+    // A default name for rust programs
     public function defaultFileName($sourcecode) {
         return 'prog.rs';
     }
